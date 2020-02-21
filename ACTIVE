@@ -1,0 +1,9 @@
+systemctl stop firewalld.service 
+yum -y install git 
+git clone https://github.com/myanaloglife/py-kms.git 
+yum -y install python-argparse 
+cd py-kms 
+python server.py 
+yum -y install screen 
+screen -dmS jihuo python server.py 
+ps -ef | grep jihuo
